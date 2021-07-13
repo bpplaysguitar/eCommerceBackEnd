@@ -26,12 +26,10 @@
 
 
 ## Description
-This command line application helps organize employees, roles, and departments within a company. It uses MySQL, Node.js, and JavaScript to present the user with options to view or change things about their company.
+TODO
 
 ## Technologies Used
-JavaScript<br>
-Node.js<br>
-MySQL
+TODO
       
       
 ## Installation
