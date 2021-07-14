@@ -116,7 +116,7 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
 
-  // Looks for the category based on id given in the request parameters and deletes the instance from the database
+  // Looks for the product based on id given in the request parameters and deletes the instance from the database
   Product.destroy({
     where: {
       id: req.params.id,
