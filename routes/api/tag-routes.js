@@ -82,9 +82,9 @@ router.put('/:id', (req, res) => {
   )
     .then((updatedTag) => {
       // Sends the updated tag as a json response
-      res.json(updatedTag);
+      res.status(200).json(updatedTag);
     })
-    .catch((err) => res.json(err));
+    .catch((err) => res.status(500).json(err));
 });
 
 router.delete('/:id', (req, res) => {
@@ -95,9 +95,9 @@ router.delete('/:id', (req, res) => {
     },
   })
     .then((deletedTag) => {
-      res.json(deletedTag);
+      res.status(200).json(deletedTag);
     })
-    .catch((err) => res.json(err));
+    .catch((err) => res.status(500).json(err));
 });
 
 module.exports = router;

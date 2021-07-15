@@ -103,9 +103,9 @@ router.put('/:id', (req, res) => {
         ProductTag.bulkCreate(newProductTags),
       ]);
     })
-    .then((updatedProductTags) => res.json(updatedProductTags))
+    .then((updatedProductTags) => res.status(200).json(updatedProductTags))
     .catch((err) => {
-      // console.log(err);
+      console.log(err);
       res.status(400).json(err);
     });
 });
@@ -120,9 +120,9 @@ router.delete('/:id', (req, res) => {
     },
   })
     .then((deletedProduct) => {
-      res.json(deletedProduct);
+      res.status(200).json(deletedProduct);
     })
-    .catch((err) => res.json(err));
+    .catch((err) => res.status(500).json(err));
 });
 
 module.exports = router;

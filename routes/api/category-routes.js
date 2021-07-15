@@ -39,7 +39,7 @@ router.post('/', (req, res) => {
   Category.create({
     category_name: req.body.category_name,
   })
-    .then((categoryData) => res.json(categoryData))
+    .then((categoryData) => res.status(200).json(categoryData))
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
@@ -63,9 +63,9 @@ router.put('/:id', (req, res) => {
   )
     .then((updatedCategory) => {
       // Sends the updated category as a json response
-      res.json(updatedCategory);
+      res.status(200).json(updatedCategory);
     })
-    .catch((err) => res.json(err));
+    .catch((err) => res.status(500).json(err));
 });
 
 router.delete('/:id', (req, res) => {
@@ -77,9 +77,9 @@ router.delete('/:id', (req, res) => {
     },
   })
     .then((deletedCategory) => {
-      res.json(deletedCategory);
+      res.status(200).json(deletedCategory);
     })
-    .catch((err) => res.json(err));
+    .catch((err) => res.status(500).json(err));
 });
 
 module.exports = router;
