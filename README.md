@@ -56,7 +56,7 @@ git clone https://github.com/bpplaysguitar/eCommerceBackEnd.git,
 
 ## Usage
 Application in use
-![eCommerceBackEnd](/images/eCommerceBackEndDemo.gif)
+![eCommerceBackEnd](/images/eCommerceBackEnd.gif)
 <br>
 
       
