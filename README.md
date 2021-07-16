@@ -26,10 +26,14 @@
 
 
 ## Description
-TODO
+This eCommerce back end involves setting up API routes to GET, POST, PUT, and DELETE data from JSON objects using sequelize and MySQL. In this scenario, it was set up with data similar to what would be found in an eCommerce website back end. Using Insomnia Core, one may perform these API actions and manipulate the data.
 
 ## Technologies Used
-TODO
+Node.js <br>
+JavaScript <br>
+Insomnia Core <br>
+MySQL <br>
+RESTful API
       
       
 ## Installation
@@ -46,6 +50,8 @@ git clone https://github.com/bpplaysguitar/eCommerceBackEnd.git,
 5. Create your own repository for the files on GitHub.
 
 6. Edit in your code editor and continue to commit, push changes and perform other Git actions using your repository https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html.
+
+7. Use Insomnia Core to perform GET, POST, PUSH, and DELETE on the data. https://insomnia.rest/products/insomnia
       
 
 ## Usage
